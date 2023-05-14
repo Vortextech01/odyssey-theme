@@ -13,12 +13,12 @@ const themes = [
   {
     name: 'default',
     icon: classicThemeIcon,
-    label: 'Basilisk AI',
+    label: 'Executives',
   },
   {
     name: 'dark',
     icon: darkThemeIcon,
-    label: 'Executives',
+    label: 'Basilisk AI',
   },
   {
     name: 'earth',
@@ -107,16 +107,16 @@ export class ThemeSwitcher extends LitElement {
 			_heroImage.src = '/assets/images/home/square.gif';
 		}
 		if (theme === 'dark') {
-			_heroImage.src = '/assets/images/home/black.gif';
+			_heroImage.src = '/assets/images/home/undertale.gif';
 		}
 		if (theme === 'earth') {
 			_heroImage.src = '/assets/images/home/orange.gif';
 		}
 		if (theme === 'ocean') {
-			_heroImage.src = '/assets/images/home/undertale.gif';
+			_heroImage.src = '/assets/images/home/black.gif';
 		}
 		if (theme === 'sand') {
-			_heroImage.src = '/assets/images/home/sand-hero.jpg';
+			_heroImage.src = '/assets/images/home/cat.gif';
 		}
 		localStorage.setItem('theme', theme);
 		this.theme = theme;
