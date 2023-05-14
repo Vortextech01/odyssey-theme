@@ -104,7 +104,7 @@ export class ThemeSwitcher extends LitElement {
 
     const _heroImage = document.querySelector('#home-hero-image') as HTMLImageElement;
 		if (theme === 'default') {
-			_heroImage.src = '/assets/images/home/chilling.gif';
+			_heroImage.src = '/assets/images/home/logoepic.gif';
 		}
 		if (theme === 'dark') {
 			_heroImage.src = '/assets/images/home/cat.gif';
