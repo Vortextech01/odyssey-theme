@@ -104,19 +104,19 @@ export class ThemeSwitcher extends LitElement {
 
     const _heroImage = document.querySelector('#home-hero-image') as HTMLImageElement;
 		if (theme === 'default') {
-			_heroImage.src = '/assets/images/home/undertale.gif';
+			_heroImage.src = '/assets/images/home/chilling.gif';
 		}
 		if (theme === 'dark') {
-			_heroImage.src = '/assets/images/home/undertale.gif';
+			_heroImage.src = '/assets/images/home/cat.gif';
 		}
 		if (theme === 'earth') {
-			_heroImage.src = '/assets/images/home/orange.gif';
+			_heroImage.src = '/assets/images/home/spin.gif';
 		}
 		if (theme === 'ocean') {
 			_heroImage.src = '/assets/images/home/undertale.gif';
 		}
 		if (theme === 'sand') {
-			_heroImage.src = '/assets/images/home/sand-hero.jpg';
+			_heroImage.src = '/assets/images/home/black.gif';
 		}
 		localStorage.setItem('theme', theme);
 		this.theme = theme;
