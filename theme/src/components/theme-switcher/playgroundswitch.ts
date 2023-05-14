@@ -13,12 +13,12 @@ const themes = [
   {
     name: 'default',
     icon: classicThemeIcon,
-    label: 'Basilisk AI',
+    label: 'Executives',
   },
   {
     name: 'dark',
     icon: darkThemeIcon,
-    label: 'Executives',
+    label: 'Agents',
   },
   {
     name: 'earth',
@@ -28,7 +28,7 @@ const themes = [
   {
     name: 'ocean',
     icon: blueThemeIcon,
-    label: 'Agents',
+    label: 'Basilisks',
   },
   {
     name: 'sand',
@@ -104,16 +104,16 @@ export class ThemeSwitcher extends LitElement {
 
     const _heroImage = document.querySelector('#home-hero-image') as HTMLImageElement;
 		if (theme === 'default') {
-			_heroImage.src = '/assets/images/home/logoepic.gif';
+			_heroImage.src = '/assets/images/home/square.gif';
 		}
 		if (theme === 'dark') {
-			_heroImage.src = '/assets/images/home/cat.gif';
+			_heroImage.src = '/assets/images/home/undertale.gif';
 		}
 		if (theme === 'earth') {
-			_heroImage.src = '/assets/images/home/spin.gif';
+			_heroImage.src = '/assets/images/home/orange.gif';
 		}
 		if (theme === 'ocean') {
-			_heroImage.src = '/assets/images/home/undertale.gif';
+			_heroImage.src = '/assets/images/home/spin.gif';
 		}
 		if (theme === 'sand') {
 			_heroImage.src = '/assets/images/home/black.gif';
