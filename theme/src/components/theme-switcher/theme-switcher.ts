@@ -110,7 +110,7 @@ export class ThemeSwitcher extends LitElement {
 			_heroImage.src = '/assets/images/home/black.gif';
 		}
 		if (theme === 'earth') {
-			_heroImage.src = '/assets/images/home/earth-hero.jpg';
+			_heroImage.src = '/assets/images/home/orange.gif';
 		}
 		if (theme === 'ocean') {
 			_heroImage.src = '/assets/images/home/ocean-hero.jpg';
