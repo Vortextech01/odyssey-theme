@@ -132,13 +132,13 @@
 	/* Theme Colors */
 	--theme-primary: #f7f9ff;
 	--theme-primary-hover: #d4ff38;
-	--theme-on-primary: hsl(288, 94%, 6%);
+	--theme-on-primary: hsl(287, 90%, 4%);
 
-	--theme-bg: #020d2b;
+	--theme-bg: #000000;
 	--theme-on-bg: #efeffc;
 
-	--theme-surface-1: #01290a;
-	--theme-on-surface-1: #dce7ff;
+	--theme-surface-1: #011806;
+	--theme-on-surface-1: #f3f7ff;
 
 	--theme-surface-2: #fdf1ff;
 	--theme-on-surface-2: #080105;
