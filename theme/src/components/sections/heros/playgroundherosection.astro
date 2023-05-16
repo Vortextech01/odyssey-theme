@@ -17,21 +17,21 @@ import {ThemeSwitcher} from '../../theme-switcher/playgroundswitch';
 					>©
 				</p>
 				<div class="hero-btns__container">
-					<Button href="/theme/get-started" customIcon
-						>Get Started
+					<Button href="/dashboard/" customIcon
+						>Continue
             <Fragment slot="icon">
               <Icon name="ic:baseline-chevron-right"/>
             </Fragment>
             </Button
 					>
-					<Button href="/theme/style-guide" unelevated>Style Guide</Button>
+					<Button href="/dashboard/" unelevated>My Dashboard</Button>
 				</div>
         {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 		</div>
 		<div class="hero-section__image">
 				<picture>
 					<img
-						src="/assets/images/home/undertale.gif"
+						src="/assets/images/home/square.gif"
 						alt="Sapiens IA Odyssey"
 						id="home-hero-image"
 					/>
