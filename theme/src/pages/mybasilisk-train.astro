@@ -1,0 +1,46 @@
+---
+import { Container, FeatureCard } from '@littlesticks/odyssey-theme-components';
+
+import Layout from '../layouts/Base.astro';
+import HomeHeroSection from '../components/sections/heros/playgroundherosection.astro';
+import {
+	TextCardSection,
+	Container,
+	Button,
+	FormInput,
+	FormSelect,
+	FormTextarea,
+} from '@littlesticks/odyssey-theme-components';
+import QuickstartForm from '../components/forms/QuickstartForm.astro';
+import {Icon} from 'astro-icon';
+const seo = {
+	title: 'Quickstart 2/3',
+	description: 'Design, train and deploy your own AI assistant.',
+};
+
+---
+
+<Layout>
+  <iframe src="https://demo.sapiens-ia.com/" title="Basilisk AI Demo" style={{width: "100%", height: "100vh", border: "none"}}></iframe>
+  <Container>
+		<TextCardSection>
+		<div class="style-guide-color__card style-guide-color__card--surface-2">
+			<h1>Quickstart⚡2/3</h1>
+			<h3>Train your Basilisk!</h3>
+			<h4>Click on the system role button and paste your customized system rol generated in the previous module, once your AI has it's personality correctly configured, start testing it's abilities, talk with your assistant and introduce yourself as it's creator, that way you can start training and teaching your Basilisk about all the task's it will have to do, and all the knowledge and information you want it to know about.</h4>
+			<h5>Once you0re done with the training, you can save your progress and continue to deploy your AI by clicking the button below.</h5>
+			<div class="cta-buttons__container">
+        <Button
+					href="/dashboard/"
+          customIcon
+					>
+          Save & Continue?☑️
+          <Fragment slot="icon">
+            <Icon name="ic:baseline-chevron-right" />
+          </Fragment>
+				</Button>
+			</div>
+		</TextCardSection>
+	</Container>
+</Layout>
+
