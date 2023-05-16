@@ -23,14 +23,41 @@ const seo = {
 <Layout>
   <script type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
   <zapier-interfaces-page-embed page-id='clgrpxnef0009l20f4dr27nrd' no-background='true' style={{width: "100%", height: "100vh", border: "none"}}></zapier-interfaces-page-embed>
-  <Button
-					href="/quickstart/"
+  <Container>
+		<TextCardSection>
+			<h1>Where do we go now?🧬</h1>
+			<div class="cta-buttons__container">
+        <Button
+        href="https://chat.sapiens-ia.com"
+        outlined
+        newTab
+        customIcon
+        >
+        QuickChat💬
+        <Fragment slot="icon">
+          <Icon name="ic:baseline-launch" />
+        </Fragment>
+      </Button>
+        <Button
+					href="/dashboard/"
           customIcon
 					>
-          Continue☑️
+          Playground♟
           <Fragment slot="icon">
             <Icon name="ic:baseline-chevron-right" />
           </Fragment>
-   </Button>	
+				</Button>
+        <Button
+					href="/quickstart/"
+          customIcon
+					>
+          QuickStart⚡️
+          <Fragment slot="icon">
+            <Icon name="ic:baseline-chevron-right" />
+          </Fragment>
+				</Button>
+			</div>
+		</TextCardSection>
+	</Container>
 </Layout>
 
