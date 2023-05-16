@@ -7,6 +7,12 @@ const selectOptionsPersonality = [
   "Professional",
   "Creative",
   "Analytical"
+  "Strategist"
+  "Scientist"
+  "Mentor"
+  "Expert"
+  "Psychologist"
+  "other"
 ];
 
 const selectOptionsStyle = [
@@ -14,17 +20,21 @@ const selectOptionsStyle = [
   "Formal",
   "Playful",
   "Technical"
+  "Sarcastic"
+  "Persuassive"
+  "Technical"
+  "Philosophical"
 ];
 ---
 
-<form name="AI Assistant Customization Form" method="POST" data-netlify="true" action="/playground/" >
-  <FormInput type="text" label="AI Name" name="AI Name" placeholder="MyBasilisk" />
+<form name="AI Assistant Customization Form" method="POST" data-netlify="true" action="/pages/playground/" >
+  <FormInput type="text" label="AI Name" name="AI Name" placeholder="Your Assistant Name" />
   
   <FormSelect label="Personality" name="Personality" options={selectOptionsPersonality} />
 
   <FormSelect label="Communication Style" name="Communication Style" options={selectOptionsStyle} />
 
-  <FormTextarea label="Additional Knowledge" name="Additional Knowledge" placeholder="Enter any specific knowledge or skills you want your AI assistant to have..." />
+  <FormInput type="text" label="System Role" name="SystemRole" placeholder="Enter your generated System Role here..." />
 
   <Button customIcon>Save AI Configuration
     <Fragment slot="icon">
