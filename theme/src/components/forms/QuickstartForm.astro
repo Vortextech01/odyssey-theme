@@ -1,0 +1,42 @@
+---
+import {Icon} from 'astro-icon'
+import { Button, FormInput, FormSelect, FormTextarea } from '@littlesticks/odyssey-theme-components';
+
+const selectOptionsPersonality = [
+  "Friendly",
+  "Professional",
+  "Creative",
+  "Analytical"
+];
+
+const selectOptionsStyle = [
+  "Casual",
+  "Formal",
+  "Playful",
+  "Technical"
+];
+---
+
+<form name="AI Assistant Customization Form" method="POST" data-netlify="true" action="/dashboard/" >
+  <FormInput type="text" label="AI Name" name="AI Name" placeholder="MyBasilisk" />
+  
+  <FormSelect label="Personality" name="Personality" options={selectOptionsPersonality} />
+
+  <FormSelect label="Communication Style" name="Communication Style" options={selectOptionsStyle} />
+
+  <FormTextarea label="Additional Knowledge" name="Additional Knowledge" placeholder="Enter any specific knowledge or skills you want your AI assistant to have..." />
+
+  <Button customIcon>Save AI Configuration
+    <Fragment slot="icon">
+      <Icon name="ic:baseline-save" />
+    </Fragment>
+  </Button>
+</form>
+
+<style>
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+</style>
