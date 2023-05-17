@@ -25,8 +25,8 @@ const themes = [
   }
 ]
 
-@customElement('theme-switcher')
-export class ThemeSwitcher extends LitElement {
+@customElement('playground-switcher')
+export class PlaygroundSwitcher extends LitElement {
 	static styles = [
 		css`
 			:host {
