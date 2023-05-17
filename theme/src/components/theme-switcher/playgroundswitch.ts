@@ -2,38 +2,26 @@ import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
 import {
-	classicThemeIcon,
-	darkThemeIcon,
-	earthThemeIcon,
-	blueThemeIcon,
-	orangeThemeIcon,
-} from './icons';
+	modernThemeIcon,
+	vibrantThemeIcon,
+	contrastThemeIcon,
+} from './iconscool';
 
 const themes = [
   {
-    name: 'default',
-    icon: classicThemeIcon,
+    name: 'basic',
+    icon: modernThemeIcon,
     label: 'Basic Plan',
   },
   {
-    name: 'dark',
-    icon: darkThemeIcon,
+    name: 'starter',
+    icon: vibrantThemeIcon,
     label: 'Starter',
   },
   {
-    name: 'earth',
-    icon: earthThemeIcon,
+    name: 'contrast',
+    icon: contrastThemeIcon,
     label: 'Business',
-  },
-  {
-    name: 'ocean',
-    icon: blueThemeIcon,
-    label: 'Enterprise',
-  },
-  {
-    name: 'sand',
-    icon: orangeThemeIcon,
-    label: 'Investors',
   }
 ]
 
@@ -91,7 +79,7 @@ export class ThemeSwitcher extends LitElement {
 		if (localStorageTheme !== null) {
 			this._setTheme(localStorageTheme);
 		} else {
-      this._setTheme('default');
+      this._setTheme('basic');
     }
 	}
 
@@ -103,20 +91,14 @@ export class ThemeSwitcher extends LitElement {
 		this._doc.setAttribute('data-theme', theme);
 
     const _heroImage = document.querySelector('#home-hero-image') as HTMLImageElement;
-		if (theme === 'default') {
+		if (theme === 'basic') {
 			_heroImage.src = '/assets/images/home/square.gif';
 		}
-		if (theme === 'dark') {
+		if (theme === 'starter') {
 			_heroImage.src = '/assets/images/home/black.gif';
 		}
-		if (theme === 'earth') {
+		if (theme === 'contrast') {
 			_heroImage.src = '/assets/images/home/orange.gif';
-		}
-		if (theme === 'ocean') {
-			_heroImage.src = '/assets/images/home/undertale.gif';
-		}
-		if (theme === 'sand') {
-			_heroImage.src = '/assets/images/home/Porfolio Profile.gif';
 		}
 		localStorage.setItem('theme', theme);
 		this.theme = theme;
