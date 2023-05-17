@@ -1,22 +1,22 @@
 export const footerSocials = [
   {
     name: 'Twitter',
-    url: 'https://twitter.com/littlesticksdev',
+    url: 'https://sapiens-ia.com',
     icon: "mdi:twitter",
   },
   {
     name: 'Youtube',
-    url: 'https://youtube.com/c/LittleSticks',
+    url: 'https://www.youtube.com/@sapiensia7494',
     icon: "mdi:youtube",
   },
   {
     name: 'Github',
-    url: 'https://github.com/littlesticks',
+    url: 'https://sapiens-ia.com/b/lGrHu',
     icon: "mdi:github",
   },
   {
     name: 'Discord',
-    url: 'https://littlesticks.dev/discord',
+    url: 'https://sapiens-ia.com/b/lGrHu',
     icon: "ic:baseline-discord",
   },
 ]
@@ -26,25 +26,25 @@ export const footerLists = [
 		title: 'Landing Pages',
 		items: [
 			{
-				title: 'Landing Page 1',
+				title: 'Who is Sapiens IA?',
 				slug: '/landing-pages/landing-1',
 			},
 			{
-				title: 'Landing Page 2',
+				title: 'Playground',
 				slug: '/landing-pages/landing-2',
 			},
-      // {
-			// 	title: 'Landing Page 3',
-			// 	slug: '/landing-pages/landing-3',
-			// },
+            {
+			 	title: 'Quickstart',
+			 	slug: '/mybasilisk-design',
+		    },
 		],
 	},
 	{
 		title: 'Company',
 		items: [
 			{
-				title: 'About',
-				slug: '/company/about',
+				title: 'Get Started',
+				slug: '/theme/get-started',
 			},
 			{
 				title: 'Blog',
@@ -52,28 +52,28 @@ export const footerLists = [
 			},
 			{
 				title: 'Contact',
-				slug: '/company/contact',
+				slug: '/theme/contact',
 			},
 		],
 	},
 	{
-		title: 'Theme',
+		title: 'Laboratories',
 		items: [
 			{
 				title: 'Get Started',
 				slug: '/theme/get-started',
 			},
 			{
-				title: 'Style Guide',
-				slug: '/theme/style-guide',
+				title: 'Playground',
+				slug: '/dashboard/',
 			},
       {
-        title: 'Theme Setup',
-        slug: '/theme/theme-setup',
+        title: 'Quickstart',
+        slug: '/mybasilisk-design',
       },
       {
-        title: 'Customizing Odyssey',
-        slug: '/theme/customizing-odyssey',
+        title: 'Pricing',
+        slug: '/company/about',
       }
 		],
 	},
