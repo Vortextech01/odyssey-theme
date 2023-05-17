@@ -23,15 +23,15 @@ export const footerSocials = [
 
 export const footerLists = [
 	{
-		title: 'Landing Pages',
+		title: 'Modules',
 		items: [
 			{
 				title: 'Who is Sapiens IA?',
-				slug: '/landing-pages/landing-1',
+				slug: '/sapiensia/about-us',
 			},
 			{
 				title: 'Playground',
-				slug: '/landing-pages/landing-2',
+				slug: '/sapiensia/register',
 			},
             {
 			 	title: 'Quickstart',
@@ -51,8 +51,8 @@ export const footerLists = [
 				slug: '/blog',
 			},
 			{
-				title: 'Contact',
-				slug: '/theme/contact',
+				title: 'Pricing',
+				slug: '/company/pricing',
 			},
 		],
 	},
@@ -60,20 +60,20 @@ export const footerLists = [
 		title: 'Laboratories',
 		items: [
 			{
-				title: 'Get Started',
+				title: 'Navigation',
 				slug: '/theme/get-started',
 			},
 			{
 				title: 'Playground',
-				slug: '/dashboard/',
+				slug: '/sapiensia/register/',
 			},
       {
         title: 'Quickstart',
         slug: '/mybasilisk-design',
       },
       {
-        title: 'Pricing',
-        slug: '/company/pricing',
+        title: 'My Basilisk Configurations',
+        slug: '/quickstart',
       }
 		],
 	},

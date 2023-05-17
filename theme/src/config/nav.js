@@ -5,7 +5,7 @@ export const nav = [
 	},
 	{
 		title: 'Playground',
-		slug: '/dashboard/',
+		slug: '/sapiensia/register/',
 	},
 	{
 		title: 'QuickStart',
