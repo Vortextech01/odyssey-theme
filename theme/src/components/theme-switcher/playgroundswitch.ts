@@ -87,10 +87,11 @@ export class ThemeSwitcher extends LitElement {
     this._getCurrentTheme();
   }
 
-	private _setTheme(theme) {
-		this._doc.setAttribute('data-theme', theme);
+  private _setTheme(theme) {
+	this._doc.setAttribute('data-theme', theme);
 
-    const _heroImage = document.querySelector('#home-hero-image') as HTMLImageElement;
+    const _heroImage = document.querySelector('#pricing-hero-image') as HTMLImageElement;
+	if (_heroImage) {
 		if (theme === 'basic') {
 			_heroImage.src = '/assets/images/home/square.gif';
 		}
@@ -100,9 +101,11 @@ export class ThemeSwitcher extends LitElement {
 		if (theme === 'contrast') {
 			_heroImage.src = '/assets/images/home/orange.gif';
 		}
-		localStorage.setItem('theme', theme);
-		this.theme = theme;
 	}
+	localStorage.setItem('theme', theme);
+	this.theme = theme;
+}
+
 
 	render() {
     const themeButtons = html`${themes.map((theme) => {
