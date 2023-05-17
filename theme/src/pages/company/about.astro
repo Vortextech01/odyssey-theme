@@ -1,47 +1,81 @@
 ---
-import { TextSection } from '@littlesticks/odyssey-theme-components';
+import {Icon} from 'astro-icon'
+import {
+  Button,
+  ThreeColumnTextSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
 import Layout from '../../layouts/Page.astro';
-import HeroSection from '../../components/sections/heros/HeroSection.astro';
 
 const seo = {
-	title: 'About | Astro Odyssey Theme',
-	description: 'About Page',
+	title: 'Pricing | Sapiens IA',
+	description: 'Explore our flexible pricing options tailored to your needs. Choose the perfect fit for your journey with AI.',
 };
 ---
 
-<Layout {seo}>
-	<HeroSection>
+<Layout seo={seo}>
+	<StickyTextImageSection>
 		<div slot="text-container">
-			<h1>About Odyssey</h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, nisi
-				recusandae? Quidem dignissimos nobis, dicta unde, aperiam voluptate
-				autem iste reprehenderit, aliquam ducimus illo ea ipsum qui animi sequi.
-				Numquam.
-			</p>
+			<h1>💰 Pricing Plans</h1>
+			<p>We offer a range of pricing plans, designed to match your needs. Whether you're taking your first steps into the world of AI, or looking for an enterprise solution, we've got you covered.</p>
 		</div>
-    <picture slot="image-container">
-      <img
-        src="/assets/images/home/black.gif"
-        alt="Astro Odyssee"
-        id="home-hero-image"
-      />
-    </picture>
-	</HeroSection>
-  <TextSection narrow>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo asperiores alias illo accusamus voluptatem ea cum nemo odit! Consequatur quidem quo iusto quam ea neque nisi dolorum quod, recusandae id!
-      Repudiandae, fugit labore voluptatum beatae modi omnis adipisci corrupti aut aliquid cumque inventore iure possimus doloremque iste incidunt nulla architecto. Nobis iusto sunt voluptatem necessitatibus laborum, earum doloremque fugit rerum!
-    </p>
-    <p>Fugit asperiores harum consectetur sapiente deleniti. Optio enim tenetur impedit reprehenderit labore, illo eius in, consequatur odio dolore iste assumenda explicabo, nisi similique qui obcaecati possimus delectus reiciendis quod modi.</p>
-    
-    <p>
-      Vel tempore rem omnis esse officiis optio, explicabo, quod deleniti adipisci ullam cum necessitatibus eius minus vero saepe ad, dicta rerum praesentium deserunt illo itaque odio corrupti voluptatum quibusdam. Pariatur.
-      Porro neque tempore, illum eligendi deleniti iure dolorem amet magnam at dolores veniam nemo cumque aut alias repellat est dicta sit repellendus facilis officia? Minima dolorum quo ducimus adipisci perferendis.
-    </p>
-    <p>
-      Quis distinctio tempora sequi sit repudiandae cumque nostrum deserunt, voluptatibus rem eum fuga modi beatae cum ullam delectus dicta atque eius nam quos corporis. Animi praesentium quae nobis. Odit, mollitia. Voluptatum, hic explicabo. Ex accusamus ipsa ea dolor commodi quas esse ipsum alias et adipisci error necessitatibus atque facere rerum ratione consequatur aspernatur repudiandae minima consectetur fuga, doloremque dolorum pariatur.
-      Ipsam error eaque velit possimus porro eum quod illo iusto officia magnam magni, beatae nisi voluptate praesentium? Saepe distinctio adipisci quas hic quae facilis? Sequi eum hic aperiam impedit minus?
-    </p>
-  </TextSection>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/home/undertale.gif"
+				alt="Pricing Plans"
+				id="pricing-hero-image"
+			/>
+		</picture>
+	</StickyTextImageSection>
+
+	<ThreeColumnTextSection>
+		<div slot="column-1-body">
+			<h2>🔬 Laboratory Access Plan</h2>
+			<p>
+				Perfect for individuals and small teams making their first steps into AI. Gain access to our AI laboratory and start experimenting. Priced at $500/month.
+			</p>
+			<ul>
+				<li>Full Access to AI Laboratory</li>
+				<li>Basic AI Model Usage</li>
+				<li>Email Support</li>
+			</ul>
+			<Button slot="column-1-cta" href="https://sapiens-ia.com/b/lGrHu">Get Started</Button>
+		</div>
+		<div slot="column-2-body">
+			<h2>🏢 Business Plan</h2>
+			<p>
+				Suitable for businesses looking to integrate AI into their workflow. Collaborate with our AI executives to create custom solutions. Priced at $2000/month.
+			</p>
+			<ul>
+				<li>All Laboratory Access Plan Features</li>
+				<li>Custom AI Models</li>
+				<li>Priority Support</li>
+				<li>AI Executive Consultation</li>
+			</ul>
+			<Button slot="column-2-cta" href="https://chat.sapiens-ia.com">Talk to Our AI Executive</Button>
+		</div>
+		<div slot="column-3-body">
+			<h2>🌐 Enterprise Plan</h2>
+			<p>
+				Designed for large corporations needing comprehensive AI solutions. Enjoy tailored service and priority support. Pricing upon request.
+			</p>
+			<ul>
+				<li>All Business Plan Features</li>
+				<li>Dedicated Support Team</li>
+				<li>Unlimited AI Model Usage</li>
+				<li>Custom Training Programs</li>
+			</ul>
+			<Button slot="column-3-cta" href="https://api.whatsapp.com/send?app_absent=0&phone=528131011335&text=Quiero+unirme+a+el+programa+de+sapiens+ia&type=phone_number">Contact for Pricing</Button>
+      </div>
+      </ThreeColumnTextSection>
+      <CtaCardSection background="var(--theme-surface-2)" color="var(--theme-on-surface-2)">
+	<h2>🚀 Ready to start your journey with Sapiens IA?</h2>
+	<p>Choose the plan that best fits your needs and let's create a future where AI and humanity coexist and flourish.</p>
+	<Button href="/contact" customIcon>Contact Us <Fragment slot="icon">
+		<Icon name="ic:baseline-chevron-right"/>
+	</Fragment></Button>
+</CtaCardSection>
+
 </Layout>
+
