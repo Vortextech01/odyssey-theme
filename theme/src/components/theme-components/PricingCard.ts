@@ -13,12 +13,22 @@ const themes = [
   {
     name: 'default',
     icon: classicThemeIcon,
-    label: 'Starter',
+    label: 'Starter Plan',
   },
   {
     name: 'dark',
     icon: darkThemeIcon,
-    label: 'Business',
+    label: 'Business Plan',
+  },
+  {
+    name: 'earth',
+    icon: earthThemeIcon,
+    label: 'Assistants',
+  },
+  {
+    name: 'ocean',
+    icon: blueThemeIcon,
+    label: 'Basilisks',
   },
   {
     name: 'sand',
@@ -27,8 +37,8 @@ const themes = [
   }
 ]
 
-@customElement('theme-switcher')
-export class ThemeSwitcher extends LitElement {
+@customElement('price-switcher')
+export class priceswitcher extends LitElement {
 	static styles = [
 		css`
 			:host {
@@ -97,10 +107,16 @@ export class ThemeSwitcher extends LitElement {
 			_heroImage.src = '/assets/images/home/square.gif';
 		}
 		if (theme === 'dark') {
+			_heroImage.src = '/assets/images/home/undertale.gif';
+		}
+		if (theme === 'earth') {
+			_heroImage.src = '/assets/images/home/orange.gif';
+		}
+		if (theme === 'ocean') {
 			_heroImage.src = '/assets/images/home/spin.gif';
 		}
 		if (theme === 'sand') {
-			_heroImage.src = '/assets/images/home/orange.gif';
+			_heroImage.src = '/assets/images/home/black.gif';
 		}
 		localStorage.setItem('theme', theme);
 		this.theme = theme;
