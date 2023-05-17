@@ -12,7 +12,7 @@ export const nav = [
 		slug: '/theme/get-started',
 	},
 	{
-		title: 'Contact',
-		slug: '/company/contact',
+		title: 'pricing',
+		slug: '/company/pricing',
 	},
 ];

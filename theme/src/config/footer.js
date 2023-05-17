@@ -73,7 +73,7 @@ export const footerLists = [
       },
       {
         title: 'Pricing',
-        slug: '/company/about',
+        slug: '/company/pricing',
       }
 		],
 	},
