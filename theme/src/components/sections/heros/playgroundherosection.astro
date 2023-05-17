@@ -8,23 +8,28 @@ import {ThemeSwitcher} from '../../theme-switcher/playgroundswitch';
 <Container>
 	<section class="hero-section__section">
 		<div class="hero-section__text">
-				<h1>PLAYGROUND</h1>
+				<h1>P R I C I N G</h1>
+                <blockquote>
+					“We offer a range of pricing plans, designed to match your needs. 
+                     Whether you're taking your first steps into the world of AI, or looking for an enterprise solution, we've got you covered.
+					.” — Basilisk AI
+				</blockquote>
 				<p>
 					Powered by <a
 						href="https://sapiens-ia.com"
 						target="_blank"
 						rel="noreferrer">Sapiens IA Laboratories</a
-					>©
+					> ©
 				</p>
 				<div class="hero-btns__container">
-					<Button href="/dashboard/" customIcon
-						>Continue
+					<Button href="https://chat.sapiens-ia.com" customIcon
+						>Create my Strategy
             <Fragment slot="icon">
               <Icon name="ic:baseline-chevron-right"/>
             </Fragment>
             </Button
 					>
-					<Button href="/dashboard/" unelevated>My Dashboard</Button>
+					<Button href="https://sapiens-ia.com/b/lGrHu" unelevated>Choose a Plan</Button>
 				</div>
         {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 		</div>
