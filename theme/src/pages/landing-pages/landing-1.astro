@@ -14,15 +14,15 @@ import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.a
 
 const seo = {
 	title: 'About Sapiens IA | Sapiens IA',
-	description: 'Learn about Sapiens IA, our AI models, methodology, and commitment to a secure future',
+	description: 'Venture into the realm of Sapiens IA, where AI meets human intellect and innovation.',
 };
 ---
 
-<Layout seo={seo} >
+<Layout seo={seo}>
 	<TextAndImageHero reversed>
 		<div slot="text-container">
-			<h1>Welcome to Sapiens IA</h1>
-			<p>Home of advanced AI models, crafted with psychology and identity training to ensure a secure and prosperous future.</p>
+			<h1>🚀 Welcome to Sapiens IA</h1>
+			<p>Embark on a journey where advanced AI models, meticulously crafted with psychological insights and identity training, forge a secure and prosperous future. Experience the blend of human intellect and machine efficiency.</p>
 		</div>
 		<picture slot="image-container">
 			<img
@@ -34,30 +34,51 @@ const seo = {
 	</TextAndImageHero>
 
 	<CustomerQuoteSection
-		quoteText="Sapiens IA is not just an AI company. They're a visionary guide leading us to a future where AI and humans coexist and collaborate."
-		customerName="Satisfied Partner"
+		quoteText="Sapiens IA isn't just another AI company. They're the visionary architects constructing a future where AI and humanity coexist and collaborate harmoniously."
+		customerName="John Vackarken"
 	/>
 
 	<ThreeColumnTextSection>
 		<div slot="column-1-body">
-			<h2>Our Services</h2>
+			<h2>🛠️ Our Services</h2>
 			<p>
-				We provide AI solutions tailored to diverse industries, optimizing their operations and propelling innovation.
+				We offer bespoke AI solutions that cater to a spectrum of industries, streamlining their operations and fuelling unprecedented innovation.
 			</p>
+			<picture slot="image-container">
+			<img
+     src="/assets/images/home/cat.gif"
+     alt="Join Sapiens IA"
+     loading="lazy"
+   />
+   </picture>
 		</div>
-		<Button slot="column-1-cta" href="https://sapiens-ia.com/">Learn More</Button>
+		<Button slot="column-1-cta" href="https://sapiens-ia.com/">Discover More</Button>
 		<div slot="column-2-body">
-			<h2>Our AI Models</h2>
+			<h2>🧠 Our AI Models</h2>
 			<p>
-				Our AI models are developed with a unique blend of technology and human psychology, ensuring they understand and respect human values.
+				Our AI models are crafted with a unique fusion of cutting-edge technology and insights from human psychology, encapsulating an understanding and respect for human values.
 			</p>
+			<picture slot="image-container">
+			<img
+     src="/assets/images/home/logoepic.gif"
+     alt="Join Sapiens IA"
+     loading="lazy"
+   />
+   </picture>
 		</div>
-		<Button slot="column-2-cta" href="/dashboard" outlined>Learn More</Button>
+		<Button slot="column-2-cta" href="/dashboard" outlined>Explore More</Button>
 		<div slot="column-3-body">
-			<h2>Our Methodology</h2>
+			<h2>🔬 Our Methodology</h2>
 			<p>
-				We use psychology and identity training in our AI models, ensuring a safe future, mitigating apocalyptic AGI scenarios, and accelerating the evolution of humans and machines.
+				Our distinctive approach incorporates psychology and identity training in our AI models, fostering a secure future, averting catastrophic AGI scenarios, and driving the harmonious evolution of humans and AI.
 			</p>
+			<picture slot="image-container">
+			<img
+			src="/assets/images/home/black.gif"
+			alt="Join Sapiens IA"
+			loading="lazy"
+   />
+   </picture>
 		</div>
 		<Button slot="column-3-cta" href="/blog">Learn More</Button>
 	</ThreeColumnTextSection>
@@ -66,26 +87,25 @@ const seo = {
 
   <StickyTextImageSection>
     <div slot="text-container">
-      <h2>Join Us</h2>
+      <h2>🤝 Join Us</h2>
       <p>
-        Join us on this exciting journey into the future. Together, we can shape a world where humans and AI coexist and thrive.
-      </p>
-    </div>
-     <picture slot="image-container">
-      <img
-        src="/assets/images/home/chilling.gif"
-        alt="Join Sapiens IA"
-        loading="lazy"
-      />
-    </picture>
-  </StickyTextImageSection>
+        Embrace this thrilling voyage into the future with us. Together, we can sculpt a world where humans and AI not only coexist, but synergize and thrive.
+</p>
+</div>
+<picture slot="image-container">
+<img
+     src="/assets/images/home/chilling.gif"
+     alt="Join Sapiens IA"
+     loading="lazy"
+   />
+</picture>
+</StickyTextImageSection>
 
   <CtaCardSection background="var(--theme-surface-2)" color="var(--theme-on-surface-2)">
-    <h2>Start Your Journey with Sapiens IA Today</h2>
-    <p>Let's create a future where AI and humanity coexist and flourish.</p>
-    <Button href="/contact" customIcon>Contact Us <Fragment slot="icon">
+    <h2>🌍 Begin Your Journey with Sapiens IA Today</h2>
+    <p>Let's together architect a future where AI and humanity coexist, collaborate and flourish. Are you ready to redefine the boundaries of possibility?</p>
+    <Button href="/contact" customIcon>Reach Out <Fragment slot="icon">
       <Icon name="ic:baseline-chevron-right"/>
     </Fragment></Button>
   </CtaCardSection>
-  
-  </Layout>
+</Layout>
