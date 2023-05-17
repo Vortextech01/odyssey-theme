@@ -2,7 +2,7 @@
 import { Icon } from 'astro-icon';
 import { Container, Button } from '@littlesticks/odyssey-theme-components';
 import settings from '../../../config/settings.js';
-import { PlaygroundSwitcher } from '../../theme-switcher/playgroundswitch';
+import {PlaygroundSwitcher} from '../../theme-switcher/playgroundswitch';
 ---
 
 <Container>
@@ -31,7 +31,7 @@ import { PlaygroundSwitcher } from '../../theme-switcher/playgroundswitch';
 					>
 					<Button href="https://sapiens-ia.com/b/lGrHu" unelevated>Choose a Plan</Button>
 				</div>
-        {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
+        {settings.enableThemeSwitcher && <PlaygroundSwitcher client:load/>}
 		</div>
 		<div class="hero-section__image">
 				<picture>
