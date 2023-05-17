@@ -4,15 +4,19 @@ export const nav = [
 		slug: '/',
 	},
 	{
-		title: 'playground',
+		title: 'Playground',
 		slug: '/dashboard/',
 	},
 	{
-		title: 'Get-Started',
-		slug: '/theme/get-started',
+		title: 'QuickStart',
+		slug: '/mybasilisk-design/',
 	},
 	{
-		title: 'pricing',
+		title: 'Pricing',
 		slug: '/company/pricing',
+	},
+	{
+		title: 'Contact Us',
+		slug: 'https://chat.sapiens-ia.com',
 	},
 ];
