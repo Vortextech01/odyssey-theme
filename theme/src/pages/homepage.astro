@@ -2,35 +2,13 @@
 import { Container, FeatureCard, BlogPostsList } from '@littlesticks/odyssey-theme-components';
 import { parse, isBefore } from 'date-fns';
 import Layout from '../layouts/Base.astro';
-import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+import HomeHeroSection from '../components/sections/heros/newhero.astro';
 
-const posts = await Astro.glob('./blog/posts/*.mdx').then(posts =>
-	posts
-		.map(({ frontmatter, url }) => ({
-			title: frontmatter.title,
-			description: frontmatter.description,
-			publishDate: parse(frontmatter.publishDate, 'MMMM d, yyyy', new Date()),
-			featuredImage: frontmatter.featuredImage,
-			excerpt: frontmatter.excerpt,
-			href: url,
-		}))
-		.sort((a, b) => {
-			if (isBefore(a.publishDate, b.publishDate)) return 1;
-			if (isBefore(b.publishDate, a.publishDate)) return -1;
-			return 0;
-		})
-);
 ---
 
 <Layout>
-  <HomeHeroSection />
-  
   <Container>
-	<h2>"Automatons Catalog"</h2>
-	<p>
-	  Learn more about our AI models and the future of AI in the workspace. Read our latest posts and stay ahead of the singularity curve
-	</p>
-	<BlogPostsList posts={posts} />
+        <HomeHeroSection />
   </Container>
 </Layout>
 
